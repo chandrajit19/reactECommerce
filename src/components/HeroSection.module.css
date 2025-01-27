@@ -1,0 +1,159 @@
+.heroSection {
+    background: linear-gradient(to right, #3b434a, #4f5a31);
+    color: white;
+    padding: 100px 20px;
+    height: 100vh;
+    margin-top: 5rem;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .textContent {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 50%;
+  }
+  
+  .textContent h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  .textContent p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .ctaButton {
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+    &:hover{
+      transform: scale(1.1);
+      background-color: #f8f9fa;
+    }
+ 
+   
+  }
+
+
+  
+  .imageContent{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    animation: rotation 2s ease-in-out ;
+    
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+   
+    }
+    to {
+  
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  .fadeInUp {
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+/* media querry */
+
+  @media (max-width: 768px) {
+
+    .cartBadge{
+      left: 10px;
+      top:12px ;
+    }
+    
+    }
+
+@media (max-width: 576px) {
+  .heroSection{
+    max-height: 50vh;
+  }
+ .heroContent{
+  display: flex;
+  flex-direction: column;
+ 
+
+ }
+ .textContent {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 100%;
+}
+.image {
+  width: 50%;
+  border-radius: 10px;
+  animation: rotation 2s ease-in-out ;
+  
+}
+.imageContent{
+  margin-top: 3rem;
+}
+  
+    }

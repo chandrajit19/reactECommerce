@@ -1,0 +1,53 @@
+
+  .toastContainer {
+    position: fixed;
+    top: 2rem;
+    left: 20rem;
+    z-index: 1050;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out 1.5s; /* Show and hide animation */
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Top se slide-in effect */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Top se slide-out effect */
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .toastContainer{
+      top: 1rem;
+      left: -5rem;
+   
+    }
+    
+    }
+
+@media (max-width: 576px) {
+.toastContainer{
+  top: 1rem;
+  left: -5rem;
+}
+
+    }

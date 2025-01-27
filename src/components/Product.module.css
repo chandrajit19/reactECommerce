@@ -1,0 +1,70 @@
+
+.cardContainer{
+    min-height: 30rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.customImg{
+    max-height: 8rem;
+    object-fit: contain;
+}
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.buttonToogle{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border:none;
+    border-radius: 2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    & button{
+        border: none;
+        padding: 0 10px;
+        cursor: pointer;
+        padding: 0 20px;
+        background-color:rgba(128, 128, 128, 0.425);
+        font-weight: 500;
+        border-top-left-radius: .6rem;
+    }
+}
+
+.quanitySec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    html{
+        font-size: 60%;
+    }
+    .buttonToogle{
+        & button{
+         
+            padding: 0 12px;
+        }
+    }
+    }
+
+@media (max-width: 576px) {
+
+    html{
+        font-size: 60%;
+        
+    }
+    .buttonToogle{
+        & button{
+         
+            padding: 0 17px;
+        }
+    }
+    }

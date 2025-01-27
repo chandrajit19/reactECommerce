@@ -1,0 +1,23 @@
+.footerContainer{
+    /* margin-top: 6rem; */
+    min-height: 21rem;
+    padding:0 2rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+   
+    }
+
+@media (max-width: 576px) {
+    .footerContainer{
+        margin-top: 0rem;
+        padding-bottom: 6rem;
+        padding-top: 7rem;
+    }
+ 
+    }

@@ -1,0 +1,51 @@
+.cartRow{
+    margin-bottom: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    min-height: 6rem;
+    & img{
+      width: 6rem;
+    }
+    & div:nth-child(1){
+     
+        width: 400px;
+        padding-left: 1rem;
+       }
+
+       & div:nth-child(3){
+         & button{
+            border: none;
+            background-color: rgba(128, 128, 128, 0.116);
+            font-weight: bold;
+         }
+        width: 100px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        margin: 0 .5rem;
+      
+       } 
+   
+}
+
+@media (max-width: 768px) {
+
+    html{
+        font-size: 60%;
+    }
+  
+    .cartRow{
+        & div:nth-child(1){
+    
+            width: 200px;
+           }
+
+           & div:nth-child(3){
+    
+            width: 80px;
+           }
+         
+    }
+  
+  }

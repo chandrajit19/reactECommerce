@@ -1,0 +1,14 @@
+.productContainer{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    background: linear-gradient(to right, #3b434a, #4f5a31);
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .productContainer{
+        margin-top: 11rem;
+    }
+  
+    }
